@@ -4,6 +4,8 @@
 //
 
 #import "ContentViewController.h"
+#import "UIColor+Utils.h"
+#import "LQInsetsLabel.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -35,9 +37,14 @@
 - (void)addSection {
   RETableViewSection *section = [RETableViewSection section];
 
-  UILabel *headerView = [[UILabel alloc] init];
-  headerView.backgroundColor = [UIColor lightGrayColor];
+  // custom label with insets.
+  LQInsetsLabel *headerView = [[LQInsetsLabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 100.f, 24.0f)];
+  headerView.textInsets = UIEdgeInsetsMake(0.f, 15.f, 0.f, 0.f);
+
+  headerView.backgroundColor = [UIColor separatorColor];
   headerView.text = @"Table Header";
+  headerView.font = [UIFont systemFontOfSize:10];
+
   section.headerView = headerView;
   section.headerHeight = 30;
 
