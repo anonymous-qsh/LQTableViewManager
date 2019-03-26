@@ -32,6 +32,7 @@
   }];
 
   [self addSection];
+  [self addAutoHeightSection];
 }
 
 - (void)addSection {
@@ -51,6 +52,19 @@
   for (int i = 0; i < 30; ++i) {
     [section addItem:[[LQReadOnlyItem alloc] initWithTitle:[NSString stringWithFormat:@"Title--%d", i] value:[NSString stringWithFormat:@"Value--%d", i]]];
   }
+
+  [self.lqManager addSection:section];
+  [self.lqTableView reloadData];
+}
+
+- (void)addAutoHeightSection {
+  RETableViewSection *section = [RETableViewSection section];
+
+  LQAutoHeightItem *item = [[LQAutoHeightItem alloc] init];
+  item.value =
+      @"This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text.";
+
+  [section addItem:item];
 
   [self.lqManager addSection:section];
   [self.lqTableView reloadData];

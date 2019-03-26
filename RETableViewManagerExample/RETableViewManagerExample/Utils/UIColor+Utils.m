@@ -1,6 +1,5 @@
 //
 //  UIColor+Utils.m
-//  qducc_ios
 //
 //  Created by wangweilong on 15/12/30.
 //  Copyright © 2015年 wangweilong. All rights reserved.

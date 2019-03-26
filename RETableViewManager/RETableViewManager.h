@@ -52,6 +52,7 @@
 #import "REInlineDatePickerItem.h"
 #import "REInlinePickerItem.h"
 #import "LQReadOnlyItem.h"
+#import "LQTableViewAutoHeightCell.h"
 #import "NSString+RETableViewManagerAdditions.h"
 
 @protocol RETableViewManagerDelegate;

@@ -109,6 +109,7 @@
     self[@"REInlineDatePickerItem"] = @"RETableViewInlineDatePickerCell";
     self[@"REInlinePickerItem"] = @"RETableViewInlinePickerCell";
     self[@"LQReadOnlyItem"] = @"LQTableViewReadOnlyCell";
+    self[@"LQAutoHeightItem"] = @"LQTableViewAutoHeightCell";
 }
 
 - (void)registerClass:(NSString *)objectClass forCellWithReuseIdentifier:(NSString *)identifier
