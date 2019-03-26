@@ -37,6 +37,7 @@
 #import "RETableViewLongTextCell.h"
 #import "RETableViewOptionCell.h"
 #import "RETableViewPickerCell.h"
+#import "LQTableViewReadOnlyCell.h"
 #import "REBoolItem.h"
 #import "RERadioItem.h"
 #import "RETextItem.h"
@@ -50,6 +51,7 @@
 #import "RESegmentedItem.h"
 #import "REInlineDatePickerItem.h"
 #import "REInlinePickerItem.h"
+#import "LQReadOnlyItem.h"
 #import "NSString+RETableViewManagerAdditions.h"
 
 @protocol RETableViewManagerDelegate;

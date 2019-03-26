@@ -33,6 +33,7 @@
 @property (strong, readwrite, nonatomic) REPickerItem *pickerItem;
 @property (strong, readwrite, nonatomic) RESegmentedItem *segmentItem;
 @property (strong, readwrite, nonatomic) RESegmentedItem *segmentItem2;
+@property (strong, readwrite, nonatomic) LQReadOnlyItem *readOnlyItem;
 
 @end
 
@@ -79,7 +80,11 @@
     
     RETableViewSection *section = [RETableViewSection sectionWithHeaderTitle:@"Basic controls"];
     [self.manager addSection:section];
-    
+
+    // readonly item
+    self.readOnlyItem = [LQReadOnlyItem itemWithTitle:@"Title" value:@"this some thing of title"];
+    [section addItem:self.readOnlyItem];
+
     // Custom item / cell
     self.manager[@"MultilineTextItem"] = @"MultilineTextCell";
     
