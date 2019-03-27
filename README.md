@@ -489,7 +489,7 @@ In your `RETableViewCell` subclass you need to link an `item` object with your i
 it:
 
 ```objective-c
-#import <RETableViewManager/RETableViewManager.h>
+#import <LQTableViewManager/RETableViewManager.h>
 #import "CustomItem.h"
 
 @interface CustomCell : RETableViewCell

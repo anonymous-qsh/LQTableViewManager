@@ -1,0 +1,31 @@
+PODS:
+  - LQTableViewManager (2.0.0):
+    - Masonry
+    - REFormattedNumberField (~> 1.1.5)
+    - REValidation (~> 0.1.4)
+  - Masonry (1.1.0)
+  - REFormattedNumberField (1.1.6)
+  - REValidation (0.1.4)
+
+DEPENDENCIES:
+  - LQTableViewManager (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - REFormattedNumberField
+    - REValidation
+
+EXTERNAL SOURCES:
+  LQTableViewManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LQTableViewManager: f6e938735ee171c6621edc786ed5bd9d203712a5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+
+PODFILE CHECKSUM: 8b4a88110dc051d83be94ab3fb1294ede52cb368
+
+COCOAPODS: 1.7.0.beta.2
