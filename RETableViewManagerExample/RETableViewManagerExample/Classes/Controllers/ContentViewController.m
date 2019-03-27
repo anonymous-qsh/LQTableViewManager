@@ -32,13 +32,6 @@
     make.top.equalTo(self.view).offset(SAFE_AREA_TOP_HEIGHT);
   }];
 
-//  LQStar *star = [[LQStar alloc] initWithFrame:CGRectMake(10, 100, 300, 40) numberOfStars:5];
-//  star.scorePercent = 0.3;
-//  star.isCompleteStar = NO;
-//  star.isAnimation = YES;
-//
-//  [self.lqTableView addSubview:star];
-
   [self addSection];
   [self addAutoHeightSection];
   [self addStarSection];

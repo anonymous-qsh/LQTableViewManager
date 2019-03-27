@@ -79,6 +79,8 @@
 		6C404750628BCDF8495B5CFF8608A40C /* RELengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C5A5FBA31ABE8BCB43651BD05D9F6 /* RELengthValidator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		713176D5A815398BFEBB10A5EE99E5A9 /* LQInsetsLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAB164B874C8C4FFD28421CFC37C902 /* LQInsetsLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		71C400A2ADFF7C5CA82D0BA51D404492 /* Pods-RETableViewManagerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DD7B3FF87C61D3E1BF868D2AD61546 /* Pods-RETableViewManagerExample-dummy.m */; };
+		73D19404224B554D00CF056F /* star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D19402224B554D00CF056F /* star_gray@2x.png */; };
+		73D19405224B554D00CF056F /* star_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73D19403224B554D00CF056F /* star_yellow@2x.png */; };
 		759BFE8056FB424D336D88F9866E41F0 /* RETableViewInlinePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B15AD636B04B7EE5698042C1A1CDF70 /* RETableViewInlinePickerCell.m */; };
 		76A208A4342225DC67AD93920EAC696A /* Card_Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 72833A4785752A798FE27B029B5BE50D /* Card_Back.png */; };
 		7B03E5C41929F56ED7F1CD7913090CF9 /* RETextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E0A7F5352329E7B19B4168AF1BDFD /* RETextItem.m */; };
@@ -242,9 +244,9 @@
 		1B833F7AAFB3B68CC6164550D59610C2 /* RENumberItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RENumberItem.h; sourceTree = "<group>"; };
 		21CAEC84D0B84D820AEDFD08F507DE96 /* REInlineDatePickerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = REInlineDatePickerItem.m; sourceTree = "<group>"; };
 		28F9A891CB8F751BCBC5376B102E4F9B /* Pods-RETableViewManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RETableViewManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
-		29487EEC69BF61EDAEE6EE1F9A707E4F /* libPods-RETableViewManagerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RETableViewManagerExample.a"; path = "libPods-RETableViewManagerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29487EEC69BF61EDAEE6EE1F9A707E4F /* libPods-RETableViewManagerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RETableViewManagerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4A5EEB0C91CE8D506AEA14FC5074B5 /* RETableViewPickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RETableViewPickerCell.h; sourceTree = "<group>"; };
-		2C5C453519FF34D20F32C69BC7C490D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2C5C453519FF34D20F32C69BC7C490D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2D47AB451C1134796241AC70F1135EF3 /* RETableViewNumberCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RETableViewNumberCell.m; sourceTree = "<group>"; };
 		2EAB164B874C8C4FFD28421CFC37C902 /* LQInsetsLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LQInsetsLabel.h; sourceTree = "<group>"; };
 		2F353B981E3335BEF8716FA8714B4719 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
@@ -267,8 +269,8 @@
 		42FB01F009AE051CF3EEF9D8B573297D /* RETableViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RETableViewManager.h; path = RETableViewManager/RETableViewManager.h; sourceTree = "<group>"; };
 		474A96823D7ED3652E827CAD8CEF8C45 /* REValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REValidator.m; path = REValidation/REValidator.m; sourceTree = "<group>"; };
 		484A5C4E0CDCEEEEE3D6DB6BF3F76327 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		4AFB5D4A0171B02C687781AD481FFFA4 /* libREValidation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libREValidation.a; path = libREValidation.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BB88B4395F920F1DEB8B9C386AC7A6C /* RETableViewManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RETableViewManager.bundle; path = "RETableViewManager-RETableViewManager.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFB5D4A0171B02C687781AD481FFFA4 /* libREValidation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREValidation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB88B4395F920F1DEB8B9C386AC7A6C /* RETableViewManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RETableViewManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C95B73DEF87E4B919DA6CE52E76E795 /* RETableViewOptionsController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RETableViewOptionsController.h; path = RETableViewManager/RETableViewOptionsController.h; sourceTree = "<group>"; };
 		4D3E0A7F5352329E7B19B4168AF1BDFD /* RETextItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RETextItem.m; sourceTree = "<group>"; };
 		4E40CB2E16C4B71CE92AB18EC147AC60 /* REMultipleChoiceItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = REMultipleChoiceItem.h; sourceTree = "<group>"; };
@@ -294,7 +296,9 @@
 		705F4D17EC23C6381A2355C3B25CBD7D /* Transparent@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Transparent@2x.png"; path = "RETableViewManager/Resources/Transparent@2x.png"; sourceTree = "<group>"; };
 		71EAC600A56306A3FB56DC2FA23B20F0 /* LQStarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LQStarItem.h; sourceTree = "<group>"; };
 		72833A4785752A798FE27B029B5BE50D /* Card_Back.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Card_Back.png; path = RETableViewManager/Resources/Card_Back.png; sourceTree = "<group>"; };
-		74DF8D43BAE5BA59DB2DD5A910DF0906 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		73D19402224B554D00CF056F /* star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star_gray@2x.png"; path = "../../../Downloads/QCStar-master/QCStarView/QCStar/star_gray@2x.png"; sourceTree = "<group>"; };
+		73D19403224B554D00CF056F /* star_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star_yellow@2x.png"; path = "../../../Downloads/QCStar-master/QCStarView/QCStar/star_yellow@2x.png"; sourceTree = "<group>"; };
+		74DF8D43BAE5BA59DB2DD5A910DF0906 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		76EF63C0184EA639ED2A85C94BE3AD7A /* REValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REValidator.h; path = REValidation/REValidator.h; sourceTree = "<group>"; };
 		7840EB118CACBA8F22E5E782FCD02570 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		7B15AD636B04B7EE5698042C1A1CDF70 /* RETableViewInlinePickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RETableViewInlinePickerCell.m; sourceTree = "<group>"; };
@@ -335,20 +339,20 @@
 		9B4621BD780392F7FDC08E05F66856A8 /* LQBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LQBaseViewController.m; sourceTree = "<group>"; };
 		9B85C2BD2C07DF806B6E6C3AF0488A4D /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		9C73690B23C0B6B5A236BE343FB15583 /* Ribbon_Expired.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Ribbon_Expired.png; path = RETableViewManager/Resources/Ribbon_Expired.png; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E56B96DA01DBE40D5548080F2F20AD0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		A0DD7B3FF87C61D3E1BF868D2AD61546 /* Pods-RETableViewManagerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RETableViewManagerExample-dummy.m"; sourceTree = "<group>"; };
-		A17F1C8709B84120AEAF400C0399CD9D /* libRETableViewManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRETableViewManager.a; path = libRETableViewManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17F1C8709B84120AEAF400C0399CD9D /* libRETableViewManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRETableViewManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A213EE48B5EA65A1E743956344A86414 /* RETableViewItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RETableViewItem.m; path = RETableViewManager/RETableViewItem.m; sourceTree = "<group>"; };
 		A2718829E5881BCB98E5EA346B8E4D59 /* Card_Mastercard.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Card_Mastercard.png; path = RETableViewManager/Resources/Card_Mastercard.png; sourceTree = "<group>"; };
 		A3591951AACB0516A70A196877DABEA6 /* LQTableViewReadOnlyCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LQTableViewReadOnlyCell.m; sourceTree = "<group>"; };
 		A43630FFE02B3BD3F34A6684BEF8CC95 /* REURLValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REURLValidator.m; path = REValidation/Validators/REURLValidator.m; sourceTree = "<group>"; };
-		A471C1D2EF9EAF0DED2B5E0C85404550 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A471C1D2EF9EAF0DED2B5E0C85404550 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83D21E6E5C89E030BD87E73759102BE /* Card_Stack.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Card_Stack.png; path = RETableViewManager/Resources/Card_Stack.png; sourceTree = "<group>"; };
 		A96711F4246D74851CC60AC791E69EA7 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		AA89896CCE957BEE5BD869A2448C8C91 /* RETextItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RETextItem.h; sourceTree = "<group>"; };
 		AB1F581D7D3D7F41ACEEAE72DAA3BCEC /* RETableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RETableViewCell.h; path = RETableViewManager/RETableViewCell.h; sourceTree = "<group>"; };
-		ACD0B298150CCC28AE4340B802AF7ADB /* RETableViewManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RETableViewManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACD0B298150CCC28AE4340B802AF7ADB /* RETableViewManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RETableViewManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ACE50EF92BA1D9856A559681907DED71 /* LQTableViewStarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LQTableViewStarCell.m; sourceTree = "<group>"; };
 		AEBA2ADC36CF994DF5372895C0A21F38 /* REInlineDatePickerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = REInlineDatePickerItem.h; sourceTree = "<group>"; };
 		AEC4472948C2EC61165D4D8CD37CF9BD /* LQStar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LQStar.h; sourceTree = "<group>"; };
@@ -356,7 +360,7 @@
 		B81AC45E6D7DBD87FB84BA360CA9B606 /* UIButtonBarArrowRight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIButtonBarArrowRight.png; path = RETableViewManager/Resources/UIButtonBarArrowRight.png; sourceTree = "<group>"; };
 		B92ECAF66DABF8DE7BD97CE40B7E41BE /* REEmailValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REEmailValidator.h; path = REValidation/Validators/REEmailValidator.h; sourceTree = "<group>"; };
 		B95EF9E438739CF1D11D4A9E41622B10 /* RETableViewOptionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RETableViewOptionCell.h; sourceTree = "<group>"; };
-		BA922B8C41495AD061F47748255E2CB1 /* libREFormattedNumberField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libREFormattedNumberField.a; path = libREFormattedNumberField.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA922B8C41495AD061F47748255E2CB1 /* libREFormattedNumberField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREFormattedNumberField.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA97FE71366F2BAFCA3DE91E684BA602 /* RETableViewBoolCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RETableViewBoolCell.m; sourceTree = "<group>"; };
 		BC39A72BBC800EA53BF028E41D1718A4 /* REFormattedNumberField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFormattedNumberField.m; path = REFormattedNumberField/REFormattedNumberField.m; sourceTree = "<group>"; };
 		BD5EB3D433F32EF9C7C31A97F42A0F38 /* LQTableViewAutoHeightCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LQTableViewAutoHeightCell.m; sourceTree = "<group>"; };
@@ -539,6 +543,8 @@
 		7179A1D0289C3260EC4FC726AC72FF49 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73D19402224B554D00CF056F /* star_gray@2x.png */,
+				73D19403224B554D00CF056F /* star_yellow@2x.png */,
 				FB2167348E2859866B80FB25B7320680 /* Card_Amex.png */,
 				0E25462DD705C7967031A057EF6CD167 /* Card_Amex@2x.png */,
 				72833A4785752A798FE27B029B5BE50D /* Card_Back.png */,
@@ -592,7 +598,6 @@
 				7E8F2177CC8EA9A210D7A54D4083162C /* ViewController+MASAdditions.m */,
 				A564B071852A0FD57435EF2ADCF94AD4 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -745,7 +750,6 @@
 				474A96823D7ED3652E827CAD8CEF8C45 /* REValidator.m */,
 				8E352822334EE187F47375EBBD188746 /* Support Files */,
 			);
-			name = REValidation;
 			path = REValidation;
 			sourceTree = "<group>";
 		};
@@ -799,7 +803,6 @@
 				BC39A72BBC800EA53BF028E41D1718A4 /* REFormattedNumberField.m */,
 				65711B81FF1FBCF0068D201697FFA102 /* Support Files */,
 			);
-			name = REFormattedNumberField;
 			path = REFormattedNumberField;
 			sourceTree = "<group>";
 		};
@@ -1066,6 +1069,7 @@
 				F0BBCCEB81342D6C7E9724A0A36E22F8 /* Card_Mastercard.png in Resources */,
 				C60BFA574966FC72909F7AF375A38D82 /* Card_Mastercard@2x.png in Resources */,
 				C3E0943224E0EC4DB67D502F0D00B0D3 /* Card_Stack.png in Resources */,
+				73D19405224B554D00CF056F /* star_yellow@2x.png in Resources */,
 				A80FED3098F9694976068AA1146788E7 /* Card_Stack@2x.png in Resources */,
 				5822DDC0FF293DE94D48327CDFD02337 /* Card_Visa.png in Resources */,
 				1A5E1C8CC515329CCAA0073BEFDAD8EA /* Card_Visa@2x.png in Resources */,
@@ -1074,6 +1078,7 @@
 				30CA5FD3D27AC067AB1C8B67C3AC546D /* Transparent@2x.png in Resources */,
 				BA23FA90D82AC7ACE19C1631E2721881 /* UIButtonBarArrowLeft.png in Resources */,
 				AE8D9EA03B556D7A4CC326488801A30E /* UIButtonBarArrowLeft@2x.png in Resources */,
+				73D19404224B554D00CF056F /* star_gray@2x.png in Resources */,
 				BC0A560D7874F1BBD75A99EFC0AABBF0 /* UIButtonBarArrowRight.png in Resources */,
 				338FCD2EF7CA221C8307DEA89849C54F /* UIButtonBarArrowRight@2x.png in Resources */,
 			);
@@ -1492,8 +1497,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
