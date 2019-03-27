@@ -7,13 +7,13 @@ __Powerful data driven content manager for UITableView based on RETableViewManag
 The general idea is to allow developers to use their own `UITableView` and `UITableViewController` instances (and even subclasses), providing a layer that synchronizes data with the cell appearance.
 It fully implements `UITableViewDelegate` and `UITableViewDataSource` protocols so you don't have to.
 
-<img src="https://github.com/romaonthego/RETableViewManager/raw/master/Screenshot1.png" alt="RETableViewManager Screenshot" width="684" height="568" />
+<img src="https://github.com/anonymous-qsh/LQTableViewManager/blob/master/Screenshot1.png?raw=true" alt="RETableViewManager Screenshot" width="684" height="568" />
 
-<img src="https://github.com/romaonthego/RETableViewManager/raw/master/Screenshot2.png" alt="RETableViewManager Screenshot" width="684" height="568" />
+<img src="https://github.com/anonymous-qsh/LQTableViewManager/blob/master/Screenshot2.png?raw=true" alt="RETableViewManager Screenshot" width="684" height="568" />
 
-<img src="https://github.com/romaonthego/RETableViewManager/raw/master/Screenshot3.png" alt="RETableViewManager Screenshot" width="684" height="568" />
+<img src="https://github.com/anonymous-qsh/LQTableViewManager/blob/master/Screenshot3.png?raw=true" alt="RETableViewManager Screenshot" width="684" height="568" />
 
-<img src="https://github.com/romaonthego/RETableViewManager/raw/master/Screenshot4.png" alt="RETableViewManager Screenshot" width="342" height="568" />
+<img src="https://github.com/anonymous-qsh/LQTableViewManager/blob/master/Screenshot4.png?raw=true" alt="RETableViewManager Screenshot" width="342" height="568" />
 
 
 
