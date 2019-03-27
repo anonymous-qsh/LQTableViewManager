@@ -6,6 +6,7 @@
 #import "ContentViewController.h"
 #import "UIColor+Utils.h"
 #import "LQInsetsLabel.h"
+#import "LQStar.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -31,8 +32,16 @@
     make.top.equalTo(self.view).offset(SAFE_AREA_TOP_HEIGHT);
   }];
 
+//  LQStar *star = [[LQStar alloc] initWithFrame:CGRectMake(10, 100, 300, 40) numberOfStars:5];
+//  star.scorePercent = 0.3;
+//  star.isCompleteStar = NO;
+//  star.isAnimation = YES;
+//
+//  [self.lqTableView addSubview:star];
+
   [self addSection];
   [self addAutoHeightSection];
+  [self addStarSection];
 }
 
 - (void)addSection {
@@ -49,7 +58,7 @@
   section.headerView = headerView;
   section.headerHeight = 30;
 
-  for (int i = 0; i < 30; ++i) {
+  for (int i = 0; i < 5; ++i) {
     [section addItem:[[LQReadOnlyItem alloc] initWithTitle:[NSString stringWithFormat:@"Title--%d", i] value:[NSString stringWithFormat:@"Value--%d", i]]];
   }
 
@@ -63,6 +72,20 @@
   LQAutoHeightItem *item = [[LQAutoHeightItem alloc] init];
   item.value =
       @"This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text.";
+
+  [section addItem:item];
+
+  [self.lqManager addSection:section];
+  [self.lqTableView reloadData];
+}
+
+- (void)addStarSection {
+  RETableViewSection *section = [RETableViewSection section];
+
+  LQStarItem *item = [[LQStarItem alloc] initWithScore:3];
+  item.isCompleteStar = YES;
+  item.numberOfStars = 10;
+  item.editable = NO;
 
   [section addItem:item];
 

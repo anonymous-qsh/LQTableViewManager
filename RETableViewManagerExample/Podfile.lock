@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.1.0)
-  - REFormattedNumberField (1.1.5)
+  - REFormattedNumberField (1.1.6)
   - RETableViewManager (1.7):
     - Masonry
     - REFormattedNumberField (~> 1.1.5)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  REFormattedNumberField: be3d55dd709f65541fb26b7e1709da07903147f8
+  REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   RETableViewManager: 0a3de9b8f1e7eae7fd3e7c84c289383ea43298d3
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
 

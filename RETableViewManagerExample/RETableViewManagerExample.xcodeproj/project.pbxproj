@@ -328,7 +328,6 @@
 				8A322535B77068AB2C2B5D4E /* Pods-RETableViewManagerExample.debug.xcconfig */,
 				8B6A250780325753FB6D44B9 /* Pods-RETableViewManagerExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -373,7 +372,7 @@
 				ORGANIZATIONNAME = "Roman Efimov";
 				TargetAttributes = {
 					30EF93AE16E039B800B84981 = {
-						DevelopmentTeam = 28LMQ2XKWE;
+						DevelopmentTeam = UQUXL2HKX2;
 					};
 				};
 			};
@@ -582,11 +581,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A322535B77068AB2C2B5D4E /* Pods-RETableViewManagerExample.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = UQUXL2HKX2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RETableViewManagerExample/RETableViewManagerExample-Prefix.pch";
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "RETableViewManagerExample/RETableViewManagerExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LittleQ.LQTableViewManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,11 +599,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B6A250780325753FB6D44B9 /* Pods-RETableViewManagerExample.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = UQUXL2HKX2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RETableViewManagerExample/RETableViewManagerExample-Prefix.pch";
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "RETableViewManagerExample/RETableViewManagerExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LittleQ.LQTableViewManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

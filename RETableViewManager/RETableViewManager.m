@@ -110,6 +110,7 @@
     self[@"REInlinePickerItem"] = @"RETableViewInlinePickerCell";
     self[@"LQReadOnlyItem"] = @"LQTableViewReadOnlyCell";
     self[@"LQAutoHeightItem"] = @"LQTableViewAutoHeightCell";
+    self[@"LQStarItem"] = @"LQTableViewStarCell";
 }
 
 - (void)registerClass:(NSString *)objectClass forCellWithReuseIdentifier:(NSString *)identifier
