@@ -26,7 +26,7 @@
 #import <UIKit/UIKit.h>
 #import "RETableViewSection.h"
 #import "REActionBar.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 
 @class RETableViewManager;
 @class RETableViewItem;
