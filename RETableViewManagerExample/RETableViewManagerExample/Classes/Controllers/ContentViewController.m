@@ -82,10 +82,10 @@
 - (void)addStarSection {
   RETableViewSection *section = [RETableViewSection section];
 
-  LQStarItem *item = [[LQStarItem alloc] initWithScore:3];
+  LQStarItem *item = [[LQStarItem alloc] initWithScore: 0.6];
   item.isCompleteStar = YES;
-  item.numberOfStars = 10;
-  item.editable = NO;
+//  item.numberOfStars = 10;
+//  item.editable = NO;
 
   [section addItem:item];
 
