@@ -1,6 +1,6 @@
-# RETableViewManager
+# LQTableViewManager
 
-__Powerful data driven content manager for UITableView.__
+__Powerful data driven content manager for UITableView based on RETableViewManager.__ 
 
 `RETableViewManager` allows to manage the content of any `UITableView` with ease, both forms and lists. `RETableViewManager` is built on top of reusable cells technique and provides APIs for mapping any object class to any custom cell subclass.
 
@@ -87,6 +87,13 @@ $ [sudo] gem install cocoapods
 $ pod setup
 ```
 
+Add my custom repo to your reop list.
+
+```bash
+$ pod repo add LQSpecs https://github.com/anonymous-qsh/Specs.git
+```
+
+
 Change to the directory of your Xcode project:
 
 ``` bash
@@ -99,7 +106,7 @@ Edit your Podfile and add RETableViewManager:
 
 ``` bash
 platform :ios, '7.0'
-pod 'RETableViewManager', '~> 1.6'
+pod 'RETableViewManager', '2.0.0'
 ```
 
 Install into your Xcode project:
@@ -115,10 +122,6 @@ $ open MyProject.xcworkspace
 ```
 
 Please note that if your installation fails, it may be because you are installing with a version of Git lower than CocoaPods is expecting. Please ensure that you are running Git >= **1.8.0** by executing `git --version`. You can get a full picture of the installation details by executing `pod install --verbose`.
-
-### 2) Include Source Code
-
-Include RETableViewManager, REValidation, Resources, REFormattedNumberField folders in your source code
 
 
 ## API Quickstart
