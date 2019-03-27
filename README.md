@@ -13,6 +13,10 @@ It fully implements `UITableViewDelegate` and `UITableViewDataSource` protocols 
 
 <img src="https://github.com/romaonthego/RETableViewManager/raw/master/Screenshot3.png" alt="RETableViewManager Screenshot" width="684" height="568" />
 
+<img src="https://github.com/romaonthego/RETableViewManager/raw/master/Screenshot4.png" alt="RETableViewManager Screenshot" width="342" height="568" />
+
+
+
 ### Quick Example
 
 Get your `UITableView` up and running in several lines of code:
