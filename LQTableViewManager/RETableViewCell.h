@@ -28,6 +28,10 @@
 #import "REActionBar.h"
 #import <Masonry/Masonry.h>
 
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+#import "BlocksKit+MessageUI.h"
+
 @class RETableViewManager;
 @class RETableViewItem;
 

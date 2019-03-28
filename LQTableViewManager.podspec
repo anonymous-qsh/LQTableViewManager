@@ -20,4 +20,5 @@ Pod::Spec.new do |s|
   s.dependency 'REFormattedNumberField', '~> 1.1.5'
   s.dependency 'REValidation', '~> 0.1.4'
   s.dependency 'Masonry'
+  s.dependency 'BlocksKit'
 end

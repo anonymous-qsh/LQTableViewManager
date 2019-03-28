@@ -10,7 +10,7 @@
 #import "RETableViewCell.h"
 #import "LQImageItem.h"
 
-@interface LQTableViewImageCell : RETableViewCell  <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface LQTableViewImageCell : RETableViewCell  <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIFocusItem>
 
 @property(strong, readwrite, nonatomic) LQImageItem *item;
 

@@ -13,6 +13,8 @@
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
 @interface LQTableViewImageCell ()
 
 @end
@@ -39,25 +41,23 @@
 
   imagePicker = [[UIImagePickerController alloc] init];
 
-  // FIXME: This button callback does not effective but I do not known why, but I do not known this button role.
-//  UIButton *doneButton = [[UIButton alloc] init];
-//  doneButton.frame = CGRectMake(SCREEN_WIDTH - 80, 0, 80, 44);
-//
-//  [doneButton setTitle:@"取消" forState:UIControlStateNormal];
-//  [doneButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+  UIButton *doneButton = [[UIButton alloc] init];
+  doneButton.frame = CGRectMake(SCREEN_WIDTH - 80, 0, 80, 44);
 
-//  [doneButton bk_whenTapped:^{
-//    [imagePicker dismissViewControllerAnimated:YES completion:nil];
-//  }];
+  [doneButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 
-//  [imagePicker.navigationBar addSubview:doneButton];
+  [doneButton bk_whenTapped:^{
+    [self->imagePicker dismissViewControllerAnimated:YES completion:nil];
+  }];
+
+  [imagePicker.navigationBar addSubview:doneButton];
 
   [self initPickerButton];
+  
 }
 
 - (void)cellWillAppear {
   [super cellWillAppear];
-
 }
 
 - (void)initPickerButton {
@@ -66,8 +66,12 @@
   float y = (index / 4) * viewHeight + (index / 4) * TEXT_MARGIN_LEFT;
   pickerButton = [[UIView alloc] initWithFrame:CGRectMake(x, y, viewWidth, viewHeight)];
   UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, viewWidth)];
-  imageView.image =
-      [UIImage imageNamed:@"Upload_Image" inBundle:[NSBundle RETableViewManagerBundle] compatibleWithTraitCollection:nil];
+  if (@available(iOS 8.0, *)) {
+    imageView.image =
+    [UIImage imageNamed:@"Upload_Image" inBundle:[NSBundle RETableViewManagerBundle] compatibleWithTraitCollection:nil];
+  } else {
+    // Fallback on earlier versions
+  }
 
   [pickerButton addSubview:imageView];
 
@@ -111,12 +115,11 @@
   UITapGestureRecognizer
       *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickImage:)];
   [imageView addGestureRecognizer:tapGesture];
-  //[tapGesture setValue:@("123123") forUndefinedKey:@"index_nameh"];
   tapGesture.view.tag = index;
   [self.contentView addSubview:imageView];
   [self.item.imageList addObject:imageView];
   [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
-    make.height.mas_equalTo(TEXT_MARGIN_LEFT + (self.item.imageList.count / 4 + 1) * viewHeight);
+    make.height.mas_equalTo(TEXT_MARGIN_LEFT + (self.item.imageList.count / 4 + 1) * self->viewHeight);
   }];
 }
 
@@ -156,20 +159,23 @@
   }
   [self updatePickerButton:[self.item.imageList count]];
   [self mas_updateConstraints:^(MASConstraintMaker *make) {
-    make.height.mas_equalTo(TEXT_MARGIN_LEFT + (self.item.imageList.count / 4 + 1) * viewHeight);
+    make.height.mas_equalTo(TEXT_MARGIN_LEFT + (self.item.imageList.count / 4 + 1) * self->viewHeight);
   }];
 }
 
 - (void)addImage:(id)sender {
   //关闭键盘
-//  [kKeyWindow endEditing:YES];
+  [kKeyWindow endEditing:YES];
 //  if ([imageList count] >= _maxImageCount) {
 //    [ViewUtils showHudTipStr:[NSString stringWithFormat:@"图片不能多于%d张哦", _maxImageCount]];
 //    return;
 //  }
-  UIActionSheet *mySheet = [[UIActionSheet alloc] initWithTitle:@"图片选取" delegate:self cancelButtonTitle:@"取消"
-                                         destructiveButtonTitle:nil
-                                              otherButtonTitles:@"拍照上传", @"相册选取", nil];
+  UIActionSheet *mySheet = [[UIActionSheet alloc]
+               initWithTitle:@"图片选取"
+                    delegate:self
+           cancelButtonTitle:@"取消"
+      destructiveButtonTitle:nil
+           otherButtonTitles:@"拍照上传", @"相册选取", nil];
 
   mySheet.tag = 0;
   [mySheet showInView:self];
