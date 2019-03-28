@@ -46,7 +46,7 @@
   LQInsetsLabel *headerView = [[LQInsetsLabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 100.f, 24.0f)];
   headerView.textInsets = UIEdgeInsetsMake(0.f, 15.f, 0.f, 0.f);
 
-  headerView.backgroundColor = [UIColor separatorColor];
+  headerView.backgroundColor = [UIColor separatorLineLightColor];
   headerView.text = @"Table Header";
   headerView.font = [UIFont systemFontOfSize:10];
 

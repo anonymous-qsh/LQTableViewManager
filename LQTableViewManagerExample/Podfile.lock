@@ -19,14 +19,18 @@ PODS:
     - Masonry
     - REFormattedNumberField (~> 1.1.5)
     - REValidation (~> 0.1.4)
+  - LQUIColor (0.1.0)
   - Masonry (1.1.0)
   - REFormattedNumberField (1.1.6)
   - REValidation (0.1.4)
 
 DEPENDENCIES:
   - LQTableViewManager (from `../`)
+  - LQUIColor
 
 SPEC REPOS:
+  https://github.com/anonymous-qsh/Specs.git:
+    - LQUIColor
   https://github.com/cocoapods/specs.git:
     - BlocksKit
     - Masonry
@@ -40,10 +44,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   LQTableViewManager: 6923a25c393874614fd793b867b9598c4d69287a
+  LQUIColor: eea6ed37f27e57728dc9ba8e276eb07f9839aed1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
 
-PODFILE CHECKSUM: 59de01253bcbe1b73c21cad2211f7b6d8021a687
+PODFILE CHECKSUM: 53215ca62e3623acb78a0f8613438e696c2dc155
 
 COCOAPODS: 1.7.0.beta.2
