@@ -1,5 +1,5 @@
 PODS:
-  - LQTableViewManager (2.0.0):
+  - LQTableViewManager (2.0.1):
     - Masonry
     - REFormattedNumberField (~> 1.1.5)
     - REValidation (~> 0.1.4)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LQTableViewManager: f6e938735ee171c6621edc786ed5bd9d203712a5
+  LQTableViewManager: 15a494a3d3fc926c243a744d1a2a96ef275747bc
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f

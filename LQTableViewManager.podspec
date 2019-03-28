@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'LQTableViewManager'
-  s.version     = '2.0.0'
+  s.version     = '2.0.1'
   s.authors     = { 'Little Queen' => 'anonymous.qsh@gmail.com' }
   s.homepage    = 'https://github.com/anonymous-qsh/LQTableViewManager'
   s.summary     = 'Powerful data driven content manager for UITableView based on RETableViewManager.'
