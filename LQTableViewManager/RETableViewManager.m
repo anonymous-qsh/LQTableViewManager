@@ -111,6 +111,7 @@
     self[@"LQReadOnlyItem"] = @"LQTableViewReadOnlyCell";
     self[@"LQAutoHeightItem"] = @"LQTableViewAutoHeightCell";
     self[@"LQStarItem"] = @"LQTableViewStarCell";
+    self[@"LQImageItem"] = @"LQTableViewImageCell";
 }
 
 - (void)registerClass:(NSString *)objectClass forCellWithReuseIdentifier:(NSString *)identifier

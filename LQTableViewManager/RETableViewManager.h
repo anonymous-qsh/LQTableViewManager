@@ -39,6 +39,7 @@
 #import "RETableViewPickerCell.h"
 #import "LQTableViewReadOnlyCell.h"
 #import "LQTableViewStarCell.h"
+#import "LQTableViewImageCell.h"
 #import "LQTableViewAutoHeightCell.h"
 #import "REBoolItem.h"
 #import "RERadioItem.h"
@@ -55,6 +56,7 @@
 #import "REInlinePickerItem.h"
 #import "LQReadOnlyItem.h"
 #import "LQStarItem.h"
+#import "LQImageItem.h"
 #import "NSString+RETableViewManagerAdditions.h"
 
 @protocol RETableViewManagerDelegate;

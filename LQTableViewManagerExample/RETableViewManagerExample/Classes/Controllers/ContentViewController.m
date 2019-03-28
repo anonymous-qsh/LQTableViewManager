@@ -7,6 +7,7 @@
 #import "UIColor+Utils.h"
 #import "LQInsetsLabel.h"
 #import "LQStar.h"
+#import "LQImageItem.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -35,6 +36,7 @@
   [self addSection];
   [self addAutoHeightSection];
   [self addStarSection];
+  [self addImageSection];
 }
 
 - (void)addSection {
@@ -75,10 +77,21 @@
 - (void)addStarSection {
   RETableViewSection *section = [RETableViewSection section];
 
-  LQStarItem *item = [[LQStarItem alloc] initWithScore: 0.6];
+  LQStarItem *item = [[LQStarItem alloc] initWithScore:0.6];
   item.isCompleteStar = YES;
 //  item.numberOfStars = 10;
 //  item.editable = NO;
+
+  [section addItem:item];
+
+  [self.lqManager addSection:section];
+  [self.lqTableView reloadData];
+}
+
+- (void)addImageSection {
+  RETableViewSection *section = [RETableViewSection section];
+
+  LQImageItem *item = [[LQImageItem alloc] initWithTarget:self];
 
   [section addItem:item];
 
