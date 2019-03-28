@@ -17,6 +17,12 @@
 
   self.title = title;
   self.value = value;
+  
+  self.titleColor = [UIColor blackColor];
+  self.valueColor = [UIColor blackColor];
+  
+  self.titleFont = [UIFont systemFontOfSize:14];
+  self.valueFont = [UIFont systemFontOfSize:14];
 
   return self;
 }

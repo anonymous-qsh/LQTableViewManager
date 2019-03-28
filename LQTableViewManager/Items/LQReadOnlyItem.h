@@ -9,6 +9,10 @@
 
 // Data
 @property(copy, readwrite, nonatomic) NSString *value;
+@property(copy, readwrite, nonatomic) UIColor *titleColor;
+@property(copy, readwrite, nonatomic) UIColor *valueColor;
+@property(copy, readwrite, nonatomic) UIFont *titleFont;
+@property(copy, readwrite, nonatomic) UIFont *valueFont;
 
 // Init functions
 + (instancetype)itemWithTitle:(NSString *)title value:(NSString *)value;

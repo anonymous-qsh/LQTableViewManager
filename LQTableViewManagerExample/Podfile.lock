@@ -14,7 +14,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - LQTableViewManager (2.0.1):
+  - LQTableViewManager (2.0.0):
     - BlocksKit
     - Masonry
     - REFormattedNumberField (~> 1.1.5)
@@ -43,7 +43,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  LQTableViewManager: 6923a25c393874614fd793b867b9598c4d69287a
+  LQTableViewManager: 3343f03b901c8d9b54b714c52755b1e54037eca8
   LQUIColor: eea6ed37f27e57728dc9ba8e276eb07f9839aed1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6

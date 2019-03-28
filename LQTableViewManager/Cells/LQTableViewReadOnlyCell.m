@@ -23,8 +23,14 @@
 - (void)cellWillAppear {
   [super cellWillAppear];
   self.selectionStyle = UITableViewCellSelectionStyleNone;
+  
+  self.textLabel.textColor = self.item.titleColor;
+  self.textLabel.font = self.item.titleFont;
 
   self.valueLabel.text = self.item.value;
+  self.valueLabel.font = self.item.valueFont;
+  self.valueLabel.textColor = self.item.valueColor;
+  
   [self.valueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
     // this value of 12 due to textLabel -- by Lq.
     make.bottom.equalTo(self.textLabel).offset(-12);

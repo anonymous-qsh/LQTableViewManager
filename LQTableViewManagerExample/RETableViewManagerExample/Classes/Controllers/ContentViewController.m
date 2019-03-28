@@ -53,9 +53,17 @@
   section.headerView = headerView;
   section.headerHeight = 30;
 
-  for (int i = 0; i < 5; ++i) {
+  for (int i = 0; i < 2; ++i) {
     [section addItem:[[LQReadOnlyItem alloc] initWithTitle:[NSString stringWithFormat:@"Title--%d", i] value:[NSString stringWithFormat:@"Value--%d", i]]];
   }
+  
+  // change color and font read only item.
+  LQReadOnlyItem *item = [[LQReadOnlyItem alloc] initWithTitle:@"change font" value:@"change color"];
+  item.titleFont = [UIFont systemFontOfSize:10];
+  item.valueColor = [UIColor mainColor];
+  
+  [section addItem:item];
+  
 
   [self.lqManager addSection:section];
   [self.lqTableView reloadData];
