@@ -13,14 +13,29 @@
   return [[self alloc] initWithScore:score];
 }
 
++ (instancetype)itemWithScore:(double)score :(NSString *)title {
+  return [[self alloc] initWithScore:score:title];
+}
+
 - (id)initWithScore:(double)score {
   if (self = [super init]) {
     self.score = score;
     self.editable = YES;
     self.isCompleteStar = NO;
     self.numberOfStars = 5;
-  };
+  }
   return self;
+}
+
+- (id)initWithScore:(double)score :(NSString *)title {
+    if (self = [super init]) {
+        self.score = score;
+        self.title = title;
+        self.editable = YES;
+        self.isCompleteStar = NO;
+        self.numberOfStars = 5;
+    }
+    return self;
 }
 
 @end

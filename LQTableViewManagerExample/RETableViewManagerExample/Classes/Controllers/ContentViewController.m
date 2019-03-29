@@ -36,7 +36,7 @@
   [self addSection];
   [self addAutoHeightSection];
   [self addStarSection];
-  [self addImageSection];
+  //  [self addImageSection];
 }
 
 - (void)addSection {
@@ -87,10 +87,13 @@
 
   LQStarItem *item = [[LQStarItem alloc] initWithScore:0.6];
   item.isCompleteStar = YES;
-//  item.numberOfStars = 10;
-//  item.editable = NO;
+  item.numberOfStars = 5;
+  item.editable = NO;
 
   [section addItem:item];
+
+  LQStarItem *inlineItem = [[LQStarItem alloc] initWithScore:0.6:@"Title"];
+  [section addItem:inlineItem];
 
   [self.lqManager addSection:section];
   [self.lqTableView reloadData];

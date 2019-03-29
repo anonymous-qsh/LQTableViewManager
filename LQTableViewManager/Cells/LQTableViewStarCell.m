@@ -9,6 +9,8 @@
 #import "LQStarItem.h"
 #import "LQStar.h"
 
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+
 @interface LQTableViewStarCell ()
 
 @property(nonatomic, strong) LQStar *star;
@@ -36,7 +38,16 @@
 - (void)cellWillAppear {
   [super cellWillAppear];
 
-  _star = [[LQStar alloc] initWithFrame:CGRectMake(10, 5, 200, 30) numberOfStars:self.item.numberOfStars];
+  if (!self.item.title) {
+    _star = [[LQStar alloc] initWithFrame:CGRectMake(10, 5, 200, 30)
+                            numberOfStars:self.item.numberOfStars];
+
+  } else {
+    // deal with title
+    _star = [[LQStar alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 210, 5, 200, 30)
+                            numberOfStars:self.item.numberOfStars];
+  }
+
   _star.scorePercent = (CGFloat) self.item.score;
   _star.isCompleteStar = self.item.isCompleteStar;
   _star.isAnimation = YES;

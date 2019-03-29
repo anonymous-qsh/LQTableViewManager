@@ -19,4 +19,7 @@
 + (instancetype)itemWithScore:(double)score;
 - (id)initWithScore:(double)score;
 
++ (instancetype)itemWithScore:(double)score:(NSString *)title;
+- (id)initWithScore:(double)score:(NSString *)title;
+
 @end
