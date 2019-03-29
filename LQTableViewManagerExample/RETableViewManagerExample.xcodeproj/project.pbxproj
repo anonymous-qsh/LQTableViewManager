@@ -63,6 +63,7 @@
 		50359B2219D2BF8C00559B3E /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50359B2019D2BF8C00559B3E /* Default-736h@3x.png */; };
 		798BDF84B703FD865B21825D /* libPods-RETableViewManagerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2517615F4F3FA65A86A959 /* libPods-RETableViewManagerExample.a */; };
 		AE6DC1C88AFDDED589AEDE0B /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DCD169AE434CF5A5D2055 /* ContentViewController.m */; };
+		AE6DC9618DD5C16F0FD248E3 /* PhotoBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DC030CF35D0371775E6FF /* PhotoBrowseViewController.m */; };
 		AE6DCF4B3012FFCA7DFE2E12 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DCD35C44F19CE68663C51 /* UIColor+Utils.m */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,8 @@
 		6B2517615F4F3FA65A86A959 /* libPods-RETableViewManagerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RETableViewManagerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A322535B77068AB2C2B5D4E /* Pods-RETableViewManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RETableViewManagerExample.debug.xcconfig"; path = "Target Support Files/Pods-RETableViewManagerExample/Pods-RETableViewManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8B6A250780325753FB6D44B9 /* Pods-RETableViewManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RETableViewManagerExample.release.xcconfig"; path = "Target Support Files/Pods-RETableViewManagerExample/Pods-RETableViewManagerExample.release.xcconfig"; sourceTree = "<group>"; };
+		AE6DC030CF35D0371775E6FF /* PhotoBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowseViewController.m; sourceTree = "<group>"; };
+		AE6DC61B01785E656C89318B /* PhotoBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowseViewController.h; sourceTree = "<group>"; };
 		AE6DC645F3A43F7AEE638557 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
 		AE6DCCB342CEB44AE45910CD /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		AE6DCD169AE434CF5A5D2055 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				30B00D7917C667A90010D439 /* ValidationsViewController.m */,
 				AE6DCD169AE434CF5A5D2055 /* ContentViewController.m */,
 				AE6DCCB342CEB44AE45910CD /* ContentViewController.h */,
+				AE6DC030CF35D0371775E6FF /* PhotoBrowseViewController.m */,
+				AE6DC61B01785E656C89318B /* PhotoBrowseViewController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 				30B00D7A17C667A90010D439 /* ValidationsViewController.m in Sources */,
 				AE6DC1C88AFDDED589AEDE0B /* ContentViewController.m in Sources */,
 				AE6DCF4B3012FFCA7DFE2E12 /* UIColor+Utils.m in Sources */,
+				AE6DC9618DD5C16F0FD248E3 /* PhotoBrowseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

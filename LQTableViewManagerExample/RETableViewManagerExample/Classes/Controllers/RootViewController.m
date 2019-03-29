@@ -16,6 +16,7 @@
 #import "IndexedListViewController.h"
 #import "ValidationsViewController.h"
 #import "ContentViewController.h"
+#import "PhotoBrowseViewController.h"
 
 @interface RootViewController ()
 
@@ -84,6 +85,11 @@
     [section addItem:[RETableViewItem itemWithTitle:@"LqViewController" accessoryType:UITableViewCellAccessoryDisclosureIndicator selectionHandler:^(RETableViewItem *item) {
         [item deselectRowAnimated:YES];
         [weakSelf.navigationController pushViewController:[[ContentViewController alloc] init] animated:YES];
+    }]];
+
+    [section addItem:[RETableViewItem itemWithTitle:@"PhotoBrose" accessoryType:UITableViewCellAccessoryDisclosureIndicator selectionHandler:^(RETableViewItem *item) {
+        [item deselectRowAnimated:YES];
+        [weakSelf.navigationController pushViewController:[[PhotoBrowseViewController alloc] init] animated:YES];
     }]];
 }
 

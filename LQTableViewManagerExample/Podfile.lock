@@ -17,12 +17,18 @@ PODS:
   - LQTableViewManager (2.0.0):
     - BlocksKit
     - Masonry
+    - MBProgressHUD
     - REFormattedNumberField (~> 1.1.5)
     - REValidation (~> 0.1.4)
+    - SDWebImage
   - LQUIColor (0.1.0)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
   - REFormattedNumberField (1.1.6)
   - REValidation (0.1.4)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
 
 DEPENDENCIES:
   - LQTableViewManager (from `../`)
@@ -34,8 +40,10 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BlocksKit
     - Masonry
+    - MBProgressHUD
     - REFormattedNumberField
     - REValidation
+    - SDWebImage
 
 EXTERNAL SOURCES:
   LQTableViewManager:
@@ -43,11 +51,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  LQTableViewManager: 3343f03b901c8d9b54b714c52755b1e54037eca8
+  LQTableViewManager: c46c11a56a95590ae881880f5249c8eb2997378f
   LQUIColor: eea6ed37f27e57728dc9ba8e276eb07f9839aed1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
 PODFILE CHECKSUM: 53215ca62e3623acb78a0f8613438e696c2dc155
 
