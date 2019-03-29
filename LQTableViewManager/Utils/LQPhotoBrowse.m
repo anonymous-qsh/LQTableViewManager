@@ -127,7 +127,7 @@ static NSString *ID = @"LQCollectionView";
   [operationBtn.layer setMasksToBounds:YES];
   [operationBtn setBackgroundColor:[UIColor blackColor]];
   [operationBtn setAlpha:0.4];
-  [operationBtn setBackgroundImage:[UIImage imageNamed:@"image_more_tap" inBundle:[NSBundle RETableViewManagerBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+  [operationBtn setBackgroundImage:[UIImage imageNamed:@"image_more_tap@2x" inBundle:[NSBundle RETableViewManagerBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
   [operationBtn setFrame:(CGRect){{ScreenWidth - 35 - 15,25},{35,20}}];
   [operationBtn addTarget:self action:@selector(operationBtnIBAction) forControlEvents:UIControlEventTouchUpInside];
   [operationBtn setHidden:!_isNeedRightTopBtn];

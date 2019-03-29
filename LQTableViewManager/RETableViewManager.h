@@ -40,6 +40,7 @@
 #import "LQTableViewReadOnlyCell.h"
 #import "LQTableViewStarCell.h"
 #import "LQTableViewImageCell.h"
+#import "LQTableViewImageReadOnlyCell.h"
 #import "LQTableViewAutoHeightCell.h"
 #import "REBoolItem.h"
 #import "RERadioItem.h"
@@ -57,6 +58,7 @@
 #import "LQReadOnlyItem.h"
 #import "LQStarItem.h"
 #import "LQImageItem.h"
+#import "LQImageReadOnlyItem.h"
 #import "NSString+RETableViewManagerAdditions.h"
 
 @protocol RETableViewManagerDelegate;

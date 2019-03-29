@@ -36,7 +36,7 @@
   [self addSection];
   [self addAutoHeightSection];
   [self addStarSection];
-  //  [self addImageSection];
+  [self addImageSection];
 }
 
 - (void)addSection {
@@ -102,7 +102,21 @@
 - (void)addImageSection {
   RETableViewSection *section = [RETableViewSection section];
 
-  LQImageItem *item = [[LQImageItem alloc] initWithTarget:self];
+  NSArray *urlArr = @[
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg"
+  ];
+
+  LQImageReadOnlyItem *item = [[LQImageReadOnlyItem alloc] initWithImageList:[urlArr mutableCopy]];
+  item.cellHeight = SCREEN_WIDTH;
+
 
   [section addItem:item];
 
