@@ -16,19 +16,18 @@
 
 #define SAFE_AREA_TOP_HEIGHT (SCREEN_HEIGHT == 812.0 ? 88 : 64)
 
-@interface PhotoBrowseViewController() <LQPhotoBrowseDelegate, MBProgressHUDDelegate> {
+@interface PhotoBrowseViewController () <LQPhotoBrowseDelegate, MBProgressHUDDelegate> {
   BOOL _ApplicationStatusIsHidden;
 }
 
-@property (nonatomic, strong) NSMutableArray *itemsArray;
-@property (nonatomic, strong) LQPhotoBrowse *photoBrowse;
+@property(nonatomic, strong) NSMutableArray *itemsArray;
+@property(nonatomic, strong) LQPhotoBrowse *photoBrowse;
 
 @end
 
-
 @implementation PhotoBrowseViewController
 
-- (NSMutableArray *)itemsArray{
+- (NSMutableArray *)itemsArray {
   if (!_itemsArray) {
     _itemsArray = [NSMutableArray array];
   }
@@ -49,36 +48,36 @@
 //  }];
 
   self.automaticallyAdjustsScrollViewInsets = NO;
-  
+
   // clear cache for test, in product env you do not need this.
   [[SDWebImageManager sharedManager].imageCache clearMemory];
-  
+
   NSArray *urlArr = @[
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-                      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg"
-                      ];
-  
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg"
+  ];
+
   CGFloat viewWidth = self.view.frame.size.width;
-  
+
   // background view
   UIView *view = [[UIView alloc] initWithFrame:CGRectMake(10, 100, viewWidth - 20, viewWidth - 20)];
   view.backgroundColor = [UIColor grayColor];
   [self.view addSubview:view];
 
   // show pictures for 3 * 3 (demo)
-  for (NSInteger i = 0 ;i < urlArr.count; i ++) {
+  for (NSInteger i = 0; i < urlArr.count; i++) {
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.userInteractionEnabled = YES;
     [imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(click:)]];
     imageView.tag = i;
-    [imageView sd_setImageWithURL:urlArr[i] placeholderImage:nil];
+    [imageView sd_setImageWithURL:urlArr[(NSUInteger) i] placeholderImage:nil];
     imageView.backgroundColor = [UIColor grayColor];
     CGFloat width = (view.frame.size.width - 40) / 3;
     NSInteger row = i / 3;
@@ -88,7 +87,7 @@
     imageView.frame = CGRectMake(x, y, width, width);
 
     LQPhotoItems *items = [[LQPhotoItems alloc] init];
-    items.url = urlArr[i];
+    items.url = urlArr[(NSUInteger) i];
     items.sourceView = imageView;
     [self.itemsArray addObject:items];
 
@@ -97,25 +96,55 @@
 
 }
 
-#pragma mark 实现
-- (void)click:(UITapGestureRecognizer *)tap{
+#pragma mark Implementation
+- (void)click:(UITapGestureRecognizer *)tap {
   LQPhotoBrowse *photoBrowse = [[LQPhotoBrowse alloc] init];
   photoBrowse.itemsArr = [_itemsArray copy];
   photoBrowse.currentIndex = tap.view.tag;
 
-  [photoBrowse setIsNeedRightTopBtn:YES]; // 是否需要 右上角 操作功能按钮
-  [photoBrowse setIsNeedPictureLongPress:NO]; // 是否 需要 长按图片 弹出框功能 .默认:需要
-  [photoBrowse setIsNeedPageControl:YES];  // 是否需要 底部 UIPageControl, Default is NO
+  [photoBrowse setIsNeedRightTopBtn:YES];
+  [photoBrowse setIsNeedPictureLongPress:NO];
+  [photoBrowse setIsNeedPageControl:YES];
 
   [photoBrowse present];
   _photoBrowse = photoBrowse;
 
-  // 设置代理方法 --->可不写
   [photoBrowse setDelegate:self];
 
-  // 这里是 设置 状态栏的 隐藏 ---> 可不写
   _ApplicationStatusIsHidden = YES;
   [self setNeedsStatusBarAppearanceUpdate];
+}
+
+// this method dismiss status bar when photo browse show.
+- (UIStatusBarStyle)preferredStatusBarStyle {
+  return UIStatusBarStyleLightContent;
+}
+- (BOOL)prefersStatusBarHidden {
+  return _ApplicationStatusIsHidden;
+}
+
+#pragma mark - Delegate
+
+- (void)photoBrowseWillDismiss {
+  NSLog(@"Will Dismiss");
+  _ApplicationStatusIsHidden = NO;
+  [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (void)photoBrowseRightOperationActionWithIndex:(NSInteger)index {
+  NSLog(@"operation:%zd", index);
+}
+
+- (void)photoBrowseRightOperationDeleteImageSuccessWithRelativeIndex:(NSInteger)index {
+  NSLog(@"delete-Relative:%zd", index);
+}
+
+- (void)photoBrowseRightOperationDeleteImageSuccessWithAbsoluteIndex:(NSInteger)index {
+  NSLog(@"delete-Absolute:%zd", index);
+}
+
+- (void)photoBrowseWriteToSavedPhotosAlbumStatus:(BOOL)success {
+  NSLog(@"saveImage:%zd", (ssize_t) success);
 }
 
 @end
