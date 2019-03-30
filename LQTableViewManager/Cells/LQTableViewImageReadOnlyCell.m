@@ -15,6 +15,8 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define LTE_X(source, m) (source) < (m) ? (source) : (m)
+
 @interface LQTableViewImageReadOnlyCell () <LQPhotoBrowseDelegate, MBProgressHUDDelegate> {
 }
 
@@ -39,16 +41,43 @@
 - (void)cellDidLoad {
   [super cellDidLoad];
 
-  _view = [[UIView alloc] initWithFrame:CGRectMake(10,
-                                                   10,
-                                                   SCREEN_WIDTH - 20,
-                                                   SCREEN_WIDTH - 20)];
+  _view = [[UIView alloc] init];
   _view.backgroundColor = [UIColor contentBackgroundColor];
   [self.contentView addSubview:_view];
 }
 
 - (void)cellWillAppear {
-  // show pictures for 3 * 3 (demo) @TODO: 添加图片罩层 最后一个显示加 n, 添加最后一个点击的委托
+  _view.frame = CGRectMake(10, 10, SCREEN_WIDTH - 20, SCREEN_WIDTH - 20);
+
+  [self addImagesThumbnail];
+
+  // show pictures for 3 * 3 (demo) @TODO: add surplus click delegate.
+  // @TODO: deal with only has 2 images, or 4 images to shown like 2 * 1 or 2 * 2
+}
+
+- (void)addImagesThumbnail {
+  int rowsCount = (int) (ceil(self.item.imageList.count / 3.0));
+  NSInteger shownImageCount = self.item.imageList.count;
+
+  if (self.item.imageShownType == LQImageShownTypeAll) {
+    // do nothing.
+  } else if (self.item.imageShownType == LQImageShownTypeInline) {
+    rowsCount = 1;
+    shownImageCount = LTE_X(shownImageCount, 3);
+  } else {
+    rowsCount = LTE_X(rowsCount, 3);
+    shownImageCount = LTE_X(shownImageCount, 9);
+  }
+
+  //                        Image Width             BorderLayout  header + footer
+  // height = rowsCount * ((SCREEN_WIDTH - 28) / 3 +      2) +        16 + 4
+  CGFloat height = (CGFloat) (rowsCount * ((SCREEN_WIDTH - 28) / 3.0 + 2) + 18);
+
+  // draw cell frame and setting cell height.
+  _view.frame = CGRectMake(10, 10, SCREEN_WIDTH - 20, height);
+  self.item.cellHeight = height;
+
+  // show image grid.
   for (NSInteger i = 0; i < self.item.imageList.count; i++) {
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.userInteractionEnabled = YES;
@@ -63,7 +92,19 @@
     CGFloat y = 2 + row * (2 + width);
     imageView.frame = CGRectMake(x, y, width, width);
 
-    if (i == 8) {
+    LQPhotoItems *items = [[LQPhotoItems alloc] init];
+    items.url = self.item.imageList[(NSUInteger) i];
+    items.sourceView = imageView;
+    [self.itemsArray addObject:items];
+
+    // add shown image view.
+    if (i < shownImageCount) {
+      [_view addSubview:imageView];
+    }
+
+    // over flow images. not shown all and has more images to be shown.
+    if (self.item.imageShownType != LQImageShownTypeAll && i == shownImageCount - 1
+        && shownImageCount < self.item.imageList.count) {
       UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,
                                                               0,
                                                               width,
@@ -74,7 +115,8 @@
 
       UILabel *surplusLabel = [[UILabel alloc] init];
 
-      surplusLabel.text = @"+15";
+      surplusLabel.text =
+          [NSString stringWithFormat:@"+%@", @(self.item.imageList.count - shownImageCount + 1)];
       surplusLabel.font = [UIFont systemFontOfSize:25];
       surplusLabel.textColor = [UIColor whiteColor];
 
@@ -86,18 +128,9 @@
 
       [self.contentView bringSubviewToFront:surplusLabel];
     }
-
-    LQPhotoItems *items = [[LQPhotoItems alloc] init];
-    items.url = self.item.imageList[(NSUInteger) i];
-    items.sourceView = imageView;
-    [self.itemsArray addObject:items];
-
-    [_view addSubview:imageView];
   }
 }
 
-- (void)addSurplusView {
-}
 
 - (void)click:(UITapGestureRecognizer *)tap {
   LQPhotoBrowse *photoBrowse = [[LQPhotoBrowse alloc] init];

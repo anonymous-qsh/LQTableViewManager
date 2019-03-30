@@ -56,14 +56,13 @@
   for (int i = 0; i < 2; ++i) {
     [section addItem:[[LQReadOnlyItem alloc] initWithTitle:[NSString stringWithFormat:@"Title--%d", i] value:[NSString stringWithFormat:@"Value--%d", i]]];
   }
-  
+
   // change color and font read only item.
   LQReadOnlyItem *item = [[LQReadOnlyItem alloc] initWithTitle:@"change font" value:@"change color"];
   item.titleFont = [UIFont systemFontOfSize:10];
   item.valueColor = [UIColor mainColor];
-  
+
   [section addItem:item];
-  
 
   [self.lqManager addSection:section];
   [self.lqTableView reloadData];
@@ -92,7 +91,7 @@
 
   [section addItem:item];
 
-  LQStarItem *inlineItem = [[LQStarItem alloc] initWithScore:0.6:@"Title"];
+  LQStarItem *inlineItem = [[LQStarItem alloc] initWithScore:0.6 :@"Title"];
   [section addItem:inlineItem];
 
   [self.lqManager addSection:section];
@@ -111,14 +110,35 @@
       @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
       @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
       @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
-      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg"
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
+      @"https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg",
   ];
 
-  LQImageReadOnlyItem *item = [[LQImageReadOnlyItem alloc] initWithImageList:[urlArr mutableCopy]];
-  item.cellHeight = SCREEN_WIDTH;
+  [section addItem:[[LQReadOnlyItem alloc] initWithTitle:@"Shown image inline"]];
 
+  LQImageReadOnlyItem
+      *item =
+      [[LQImageReadOnlyItem alloc] initWithImageList:[urlArr mutableCopy] imageShownType:LQImageShownTypeInline];
 
   [section addItem:item];
+
+  [section addItem:[[LQReadOnlyItem alloc] initWithTitle:@"Shown image multi line (max <= 9)"]];
+
+  [section addItem:[[LQImageReadOnlyItem alloc] initWithImageList:[urlArr mutableCopy] imageShownType:LQImageShownTypeMultiline]];
+
+  [section addItem:[[LQReadOnlyItem alloc] initWithTitle:@"Shown image all"]];
+
+  [section addItem:[[LQImageReadOnlyItem alloc] initWithImageList:[urlArr mutableCopy] imageShownType:LQImageShownTypeAll]];
 
   [self.lqManager addSection:section];
   [self.lqTableView reloadData];

@@ -13,9 +13,18 @@
   return [[self alloc] initWithImageList:imageList];
 }
 
++ (instancetype)itemWithImageList:(NSMutableArray *)imageList imageShownType:(LQImageShownType)imageShownType {
+  return [[self alloc] initWithImageList:imageList imageShownType:imageShownType];
+}
+
 - (id)initWithImageList:(NSMutableArray *)imageList {
+  return [self initWithImageList:imageList imageShownType:LQImageShownTypeMultiline];
+}
+
+- (id)initWithImageList:(NSMutableArray *)imageList imageShownType:(LQImageShownType)imageShownType {
   if (self = [super init]) {
     self.imageList = imageList;
+    self.imageShownType = imageShownType;
   }
   return self;
 }
