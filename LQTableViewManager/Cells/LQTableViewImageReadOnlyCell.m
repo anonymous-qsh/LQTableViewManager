@@ -8,9 +8,9 @@
 #import "LQTableViewImageReadOnlyCell.h"
 #import "UIImageView+WebCache.h"
 #import "LQImageReadOnlyItem.h"
-#import "UIColor+LQUtils.h"
 #import "LQPhotoBrowse.h"
 #import "MBProgressHUD.h"
+#import "UIColor+LQUtils.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
