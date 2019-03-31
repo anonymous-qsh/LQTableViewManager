@@ -37,6 +37,14 @@
   [self addAutoHeightSection];
   [self addStarSection];
   [self addImageSection];
+
+//  UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,
+//                                                          0,
+//                                                          SCREEN_WIDTH,
+//                                                          50)];
+//  view.backgroundColor = [UIColor redColor];
+//
+//  self.lqTableView.tableFooterView = view;
 }
 
 - (void)addSection {
@@ -144,6 +152,14 @@
   [section addItem:[[LQReadOnlyItem alloc] initWithTitle:@"Shown image all"]];
 
   [section addItem:[[LQImageReadOnlyItem alloc] initWithImageList:[urlArr mutableCopy] imageShownType:LQImageShownTypeAll]];
+
+  UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,
+                                                          0,
+                                                          SCREEN_WIDTH,
+                                                          50)];
+
+  view.backgroundColor = [UIColor redColor];
+  section.footerView = view;
 
   [self.lqManager addSection:section];
   [self.lqTableView reloadData];
