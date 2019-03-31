@@ -75,6 +75,9 @@
   item.value =
       @"This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text. This is a long text.";
 
+  item.valueFont = [UIFont systemFontOfSize:10];
+  item.valueColor = [UIColor grayColor];
+
   [section addItem:item];
 
   [self.lqManager addSection:section];
@@ -92,6 +95,8 @@
   [section addItem:item];
 
   LQStarItem *inlineItem = [[LQStarItem alloc] initWithScore:0.6 :@"Title"];
+  inlineItem.starWidth = 150;
+  inlineItem.starHeight = 25;
   [section addItem:inlineItem];
 
   [self.lqManager addSection:section];

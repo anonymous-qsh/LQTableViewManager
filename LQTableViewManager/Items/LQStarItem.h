@@ -16,10 +16,13 @@
 @property(readwrite, nonatomic) NSInteger numberOfStars;
 @property(readwrite, nonatomic) BOOL isCompleteStar; // could half star.
 
+@property(readwrite, nonatomic) CGFloat starHeight;
+@property(readwrite, nonatomic) CGFloat starWidth;
+
 + (instancetype)itemWithScore:(double)score;
 - (id)initWithScore:(double)score;
 
-+ (instancetype)itemWithScore:(double)score:(NSString *)title;
-- (id)initWithScore:(double)score:(NSString *)title;
++ (instancetype)itemWithScore:(double)score :(NSString *)title;
+- (id)initWithScore:(double)score :(NSString *)title;
 
 @end

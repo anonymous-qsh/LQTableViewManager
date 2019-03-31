@@ -34,17 +34,26 @@
   }
 }
 
-// @TODO: can not resolve the problem to load image. -- by Lq @(2019-03-27)
 - (void)cellWillAppear {
   [super cellWillAppear];
 
+  // star y: (cellHeight - starHeight) / 2 --> in this way to set center.
+
+  CGFloat height = self.contentView.bounds.size.height;
+
   if (!self.item.title) {
-    _star = [[LQStar alloc] initWithFrame:CGRectMake(10, 5, 200, 30)
+    _star = [[LQStar alloc] initWithFrame:CGRectMake(10,
+                                                     (height - self.item.starHeight) / 2,
+                                                     self.item.starWidth,
+                                                     self.item.starHeight)
                             numberOfStars:self.item.numberOfStars];
 
   } else {
     // deal with title
-    _star = [[LQStar alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 210, 5, 200, 30)
+    _star = [[LQStar alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 10 - self.item.starWidth,
+                                                     (height - self.item.starHeight) / 2,
+                                                     self.item.starWidth,
+                                                     self.item.starHeight)
                             numberOfStars:self.item.numberOfStars];
   }
 

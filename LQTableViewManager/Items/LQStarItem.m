@@ -23,6 +23,8 @@
     self.editable = YES;
     self.isCompleteStar = NO;
     self.numberOfStars = 5;
+    self.starWidth = 200;
+    self.starHeight = 30;
   }
   return self;
 }

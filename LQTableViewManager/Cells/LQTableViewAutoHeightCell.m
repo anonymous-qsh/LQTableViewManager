@@ -19,12 +19,25 @@
   return self;
 }
 
++ (instancetype)itemWitValue:(NSString *)value {
+  return [[self init] initWithValue:value];
+}
+
+- (id)initWithValue:(NSString *)value {
+  if (self = [self init]) {
+    self.value = value;
+    self.valueFont = [UIFont systemFontOfSize:15];
+    self.valueColor = [UIColor blackColor];
+  }
+  return self;
+}
+
 @end
 
 @interface LQTableViewAutoHeightCell ()
 
-@property (nonatomic, strong) UIView *bgView;
-@property (nonatomic, strong) UILabel *valueLabel;
+@property(nonatomic, strong) UIView *bgView;
+@property(nonatomic, strong) UILabel *valueLabel;
 
 @end
 
@@ -46,8 +59,10 @@
   _valueLabel = [[UILabel alloc] init];
   _valueLabel.numberOfLines = 0;
   _valueLabel.backgroundColor = [UIColor clearColor];
-  _valueLabel.font = [UIFont systemFontOfSize:15];
-  _valueLabel.textColor = [UIColor blackColor];
+//  _valueLabel.font = [UIFont systemFontOfSize:15];
+//  _valueLabel.textColor = [UIColor blackColor];
+  // not show ... for overflow text.
+  _valueLabel.numberOfLines = 0;
   [self.bgView addSubview:_valueLabel];
 
   [self.valueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,6 +74,8 @@
 - (void)cellWillAppear {
   [super cellWillAppear];
 
+  self.valueLabel.font = self.item.valueFont;
+  self.valueLabel.textColor = self.item.valueColor;
   self.valueLabel.text = self.item.value;
 }
 

@@ -11,6 +11,11 @@
 @interface LQAutoHeightItem : RETableViewItem
 
 @property(nonatomic, strong) NSString *value;
+@property(nonatomic, strong) UIFont *valueFont;
+@property(nonatomic, strong) UIColor *valueColor;
+
++ (instancetype)itemWitValue: (NSString *)value;
+- (id)initWithValue: (NSString *)value;
 
 @end
 
