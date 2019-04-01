@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '8.0'
   s.requires_arc = true
-  s.source_files = 'LQTableViewManager/Cells', 'LQTableViewManager/Items', 'LQTableViewManager', 'LQTableViewManager/Controllers', 'LQTableViewManager/Utils', 'LQTableViewManager/Utils/KNActionSheet'
-  s.public_header_files = 'LQTableViewManager/Cells/*.h', 'LQTableViewManager/*.h', 'LQTableViewManager/Items/*.h', 'LQTableViewManager/Controllers/*.h', 'LQTableViewManager/Utils/*.h', 'LQTableViewManager/Utils/KNActionSheet/*.h'
+  s.source_files = 'LQTableViewManager/Cells', 'LQTableViewManager/Items', 'LQTableViewManager', 'LQTableViewManager/Controllers', 'LQTableViewManager/Utils', 'LQTableViewManager/Utils/KNActionSheet', 'LQTableViewManager/Views'
+  s.public_header_files = 'LQTableViewManager/Cells/*.h', 'LQTableViewManager/*.h', 'LQTableViewManager/Items/*.h', 'LQTableViewManager/Controllers/*.h', 'LQTableViewManager/Utils/*.h', 'LQTableViewManager/Utils/KNActionSheet/*.h', 'LQTableViewManager/Views/*.h'
   s.resource_bundle = { 'LQTableViewManager' => 'LQTableViewManager/Resources/*' }
   s.preserve_paths = 'LQTableViewManager/Resources'
 
@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage'
   s.dependency 'MBProgressHUD'
   s.dependency 'LQUIColor'
+  # s.dependency 'LQUtils'
 end
