@@ -8,6 +8,7 @@
 #import "LQTableViewImageCell.h"
 #import "LQImageItem.h"
 #import "NSBundle+RETableViewManager.h"
+#import "BlocksKit+UIKit.h"
 
 #define TEXT_MARGIN_LEFT 20
 
