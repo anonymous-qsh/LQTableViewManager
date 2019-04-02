@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.authors     = { 'Little Queen' => 'anonymous.qsh@gmail.com' }
   s.homepage    = 'https://github.com/anonymous-qsh/LQTableViewManager'
   s.summary     = 'Powerful data driven content manager for UITableView based on RETableViewManager.'
-  s.source      = { :git => 'https://github.com/anonymous-qsh/LQTableViewManager',
+  s.source      = { :git => 'https://github.com/anonymous-qsh/LQTableViewManager.git',
                     :tag => s.version.to_s }
   s.license     = { :type => "MIT", :file => "LICENSE" }
 
