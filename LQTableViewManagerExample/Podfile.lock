@@ -14,9 +14,9 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - LQTableViewManager (2.1.1):
+  - LQTableViewManager (2.1.2):
     - BlocksKit
-    - LQUIColor
+    - LQUIColor (= 0.1.0)
     - Masonry
     - MBProgressHUD
     - REFormattedNumberField (~> 1.1.5)
@@ -52,7 +52,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  LQTableViewManager: fe6df84843356f6242a5376cab080f71ccbee16a
+  LQTableViewManager: 99e9fbceb9b6984c9bef47cc8b45cd7081fdbb03
   LQUIColor: eea6ed37f27e57728dc9ba8e276eb07f9839aed1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9

@@ -23,6 +23,5 @@ Pod::Spec.new do |s|
   s.dependency 'BlocksKit'
   s.dependency 'SDWebImage'
   s.dependency 'MBProgressHUD'
-  s.dependency 'LQUIColor'
-  # s.dependency 'LQUtils'
+  s.dependency 'LQUIColor', '0.1.0'
 end
