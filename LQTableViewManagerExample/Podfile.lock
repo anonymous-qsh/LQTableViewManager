@@ -21,7 +21,7 @@ PODS:
     - MBProgressHUD
     - REFormattedNumberField (~> 1.1.5)
     - REValidation (~> 0.1.4)
-    - SDWebImage
+    - SDWebImage (= 4.4.6)
   - LQUIColor (0.1.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
@@ -52,7 +52,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  LQTableViewManager: 99e9fbceb9b6984c9bef47cc8b45cd7081fdbb03
+  LQTableViewManager: 78dc92e5d670c938faf4dbd6c4af2309d859dc49
   LQUIColor: eea6ed37f27e57728dc9ba8e276eb07f9839aed1
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9

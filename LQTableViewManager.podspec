@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.dependency 'REValidation', '~> 0.1.4'
   s.dependency 'Masonry'
   s.dependency 'BlocksKit'
-  s.dependency 'SDWebImage'
+  s.dependency 'SDWebImage', '4.4.6'
   s.dependency 'MBProgressHUD'
   s.dependency 'LQUIColor', '0.1.0'
 end
