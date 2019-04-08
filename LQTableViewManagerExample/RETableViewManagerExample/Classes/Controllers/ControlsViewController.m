@@ -56,19 +56,18 @@
     self.buttonSection = [self addButton];
 }
 
-- (void)valuesButtonPressed:(id)sender
-{
+- (void)valuesButtonPressed:(id)sender {
     NSLog(@"fullLengthFieldItem.value = %@", self.fullLengthFieldItem.value);
-    NSLog(@"textItem.value = %@", self.textItem.value);
-    NSLog(@"numberItem.value = %@", self.numberItem.value);
-    NSLog(@"passwordItem.value = %@", self.passwordItem.value);
-    NSLog(@"boolItem.value = %@", self.boolItem.value ? @"YES" : @"NO");
-    NSLog(@"floatItem.value = %f", self.floatItem.value);
-    NSLog(@"dateTimeItem = %@", self.dateTimeItem.value);
-    NSLog(@"radioItem.value = %@", self.radioItem.value);
-    NSLog(@"multipleChoiceItem.value = %@", self.multipleChoiceItem.value);
-    NSLog(@"longTextItem.value = %@", self.longTextItem.value);
-    NSLog(@"creditCardItem.number = %@, creditCardItem.expirationDate = %@, creditCardItem.cvv = %@", self.creditCardItem.number, self.creditCardItem.expirationDate, self.creditCardItem.cvv);
+    NSLog(@"textItem.value            = %@", self.textItem.value);
+    NSLog(@"numberItem.value          = %@", self.numberItem.value);
+    NSLog(@"passwordItem.value        = %@", self.passwordItem.value);
+    NSLog(@"boolItem.value            = %@", self.boolItem.value ? @"YES" : @"NO");
+    NSLog(@"floatItem.value           = %f", self.floatItem.value);
+    NSLog(@"dateTimeItem              = %@", self.dateTimeItem.value);
+    NSLog(@"radioItem.value           = %@", self.radioItem.value);
+    NSLog(@"multipleChoiceItem.value  = %@", self.multipleChoiceItem.value);
+    NSLog(@"longTextItem.value        = %@", self.longTextItem.value);
+    NSLog(@"creditCardItem.number     = %@, creditCardItem.expirationDate = %@, creditCardItem.cvv = %@", self.creditCardItem.number, self.creditCardItem.expirationDate, self.creditCardItem.cvv);
 }
 
 #pragma mark -

@@ -9,7 +9,7 @@
 #import "LQStar.h"
 #import "LQImageItem.h"
 
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_WIDTH [UIScreen  mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 #define SAFE_AREA_TOP_HEIGHT (SCREEN_HEIGHT == 812.0 ? 88 : 64)
